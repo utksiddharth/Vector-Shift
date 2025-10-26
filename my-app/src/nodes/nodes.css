@@ -1,0 +1,68 @@
+/* src/nodes/nodes.css */
+/* simple modern node card styling */
+.base-node {
+  width: auto;
+  min-width: 220px;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(20, 20, 30, 0.08);
+  padding: 10px;
+  border: 1px solid rgba(18, 20, 30, 0.06);
+  font-family: Inter, "Segoe UI", Roboto, sans-serif;
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.node-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f3f7ff, #eef2ff);
+  font-weight: 600;
+}
+
+.node-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.node-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* handle default style hook for CSS; React Flow still places the actual circle */
+.node-handle {
+  /* leave empty by default; use react-flow's handle visuals */
+}
+
+/* content area: letting content size naturally, with padding */
+.node-content {
+  padding: 8px;
+  flex: 1;
+}
+
+/* text-area inside text node */
+.textarea-auto {
+  width: 100%;
+  min-height: 40px;
+  max-height: 320px;
+  resize: none;
+  border-radius: 6px;
+  border: 1px solid #e6e9ef;
+  padding: 8px;
+  font-size: 13px;
+  font-family: inherit;
+  background: linear-gradient(180deg, #ffffff, #fafbff);
+}
